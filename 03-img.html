@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>img标签</title>
+  <style>
+    img{
+      max-width: 100%; /* 响应式*/
+    }
+  </style>
+</head>
+<body>
+  <img id="xxx" src="./写代码.png" alt="这是一个图片" width="200px" >
+  <script>
+    xxx.onload = function(){
+      console.log("图片加载成功了");
+    }
+    xxx.onerror = function(){
+      console.log("图片加载失败了");
+    }
+  </script>
+</body>
+</html>
